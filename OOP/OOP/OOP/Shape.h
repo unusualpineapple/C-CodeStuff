@@ -12,7 +12,9 @@ using namespace std;
 //Polymorphism
 // ----- can take many forms
 //Inheritance
+// ----- when we make a class and give it the variables of a parent class
 //Encapsulation
+// ----- Hiding data in values and setting or getting that data
 
 
 
@@ -24,6 +26,7 @@ class Shape
 protected:
 
 	string Name;
+	float area;
 
 public:
 	Shape() 
@@ -43,5 +46,12 @@ public:
 	{
 		cout << "I'm a " << Name << "!\n";
 	}
-
+	int GetX()
+	{
+		return X;
+	}
+	void SetX(int newValue)
+	{
+		X = newValue;
+	}
 };
